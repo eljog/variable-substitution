@@ -8,5 +8,7 @@
         "REMOTE_TEST": "Remote test!",
         "REMOTE_LOCAL_USER": "${localEnv:USER}",
         "REMOTE_TO_CONTAINER_TEST": "${containerEnv:CONTAINER_TEST}"
-    }
+    },
+
+    "initializeCommand": "echo $USER"
 }
