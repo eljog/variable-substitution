@@ -1,12 +1,12 @@
 {
     "containerEnv": {
         "CONTAINER_TEST": "Container test!",
-        "CONTAINER_LOCAL_PATH": "${localEnv:PATH}"
+        "CONTAINER_LOCAL_PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
     },
     
     "remoteEnv": {
         "REMOTE_TEST": "Remote test!",
-        "REMOTE_LOCAL_PATH": "${localEnv:PATH}",
-        "REMOTE_TO_CONTAINER_TEST": "${containerEnv:CONTAINER_TEST}"
+        "REMOTE_LOCAL_PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin",
+        "REMOTE_TO_CONTAINER_TEST": "Container test!"
     }
 }
