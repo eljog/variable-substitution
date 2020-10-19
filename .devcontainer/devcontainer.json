@@ -1,14 +1,12 @@
 {
     "containerEnv": {
         "CONTAINER_TEST": "Container test!",
-        "CONTAINER_LOCAL_USER": "${localEnv:USER}"
+        "CONTAINER_LOCAL_PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
     },
     
     "remoteEnv": {
         "REMOTE_TEST": "Remote test!",
-        "REMOTE_LOCAL_USER": "${localEnv:USER}",
-        "REMOTE_TO_CONTAINER_TEST": "${containerEnv:CONTAINER_TEST}"
-    },
-
-    "initializeCommand": "echo $USER"
+        "REMOTE_LOCAL_PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin",
+        "REMOTE_TO_CONTAINER_TEST": "Container test!"
+    }
 }
