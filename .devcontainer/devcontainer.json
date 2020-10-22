@@ -2,7 +2,7 @@
     "containerEnv": {
         "CONTAINER_TEST": "Container test!",
         "CONTAINER_LOCAL_PATH": "${localEnv:PATH}"
-    }
+    },
     "remoteEnv": {
         "REMOTE_TEST": "Remote test!",
         "REMOTE_LOCAL_PATH": "${localEnv:PATH}",
