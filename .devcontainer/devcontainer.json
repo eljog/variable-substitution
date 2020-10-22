@@ -6,6 +6,7 @@
     "remoteEnv": {
         "REMOTE_TEST": "Remote test!",
         "REMOTE_LOCAL_PATH": "${localEnv:PATH}",
-        "REMOTE_TO_CONTAINER_TEST": "${containerEnv:CONTAINER_TEST}"
+        "REMOTE_TO_CONTAINER_TEST": "${containerEnv:CONTAINER_TEST},"
+        "REMOTE_TO_CONTAINER_PATH": "${containerEnv:CONTAINER_LOCAL_PATH}"
     }
 }
