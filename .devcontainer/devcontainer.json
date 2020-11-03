@@ -1,9 +1,13 @@
 {
     "containerEnv": {
-        "CONTAINER_PATH": "${localEnv:PATH}"
+        "CONTAINER_PATH": "${localEnv:PATH}",
+        "CONTAINER_USER": "${localEnv:USER}",
+        "CONTAINER_HOME": "${localEnv:HOME}"
     },
     
     "remoteEnv": {
-        "REMOTE_PATH": "${localEnv:PATH}"
+        "REMOTE_PATH": "${localEnv:PATH}",
+        "REMOTE_USER": "${localEnv:USER}",
+        "REMOTE_HOME": "${localEnv:HOME}"
     }
 }
