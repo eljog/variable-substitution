@@ -8,6 +8,7 @@
     "remoteEnv": {
         "REMOTE_PATH": "${localEnv:PATH}",
         "REMOTE_USER": "${localEnv:USER}",
-        "REMOTE_HOME": "${localEnv:HOME}"
+        "REMOTE_HOME": "${localEnv:HOME}",
+        "ELECTRON_RUN_AS_NODE": "true"
     }
 }
